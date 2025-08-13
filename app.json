@@ -1,0 +1,30 @@
+{
+  "name": "Quick Report",
+  "description": "A React-based documentation tool for creating image reports with sections, annotations, and export capabilities",
+  "repository": "https://github.com/your-username/quick-report",
+  "logo": "https://cdn.jsdelivr.net/npm/lucide@latest/icons/file-text.svg",
+  "keywords": ["node", "express", "react", "images", "reports", "documentation"],
+  "image": "heroku/nodejs",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment for the app",
+      "value": "production"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
